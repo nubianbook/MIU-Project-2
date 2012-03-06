@@ -1,0 +1,77 @@
+<!doctype html>  
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	
+	<title>Movie Tracker</title>
+	
+	<!--  Mobile viewport optimized: j.mp/bplateviewport -->
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- Mobile IE needs ClearType for smoothing fonts -->
+	<meta http-equiv="cleartype" content="on">
+	
+	<!-- StyleSheets under here -->
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
+	<link rel="stylesheet" href="css/styles.css" type="text/css"/>
+	
+	
+	<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
+	<script src="js/libs/modernizr.custom.min.js"></script>
+
+</head>
+<body>
+
+	<div data-role="page">
+	
+		<div data-role="header" data-position="fixed">
+			<h1>Movie Tracker</h1>
+		</div>
+		
+		<div data-role="content">
+			<form method="post" enctype="text/plain" id="myform" name="f1" action="#" align="center">
+			<p>				
+			   <input type="search" id="search" value="Quick Search Here" name="search" size="40" maxlength="40" /> 
+			</p>
+	</form> 
+			<p align="center">
+			<img src="images/cta_logo.png" width="200px" height="200px">
+			  
+		   </p>
+		   <p>
+		       <a href = "additem.html">Enter</a>
+		   </p>
+		   
+		   	
+		   	<p>Browse Categories:</p><br/>
+		      <p><a href="#" data-role="button" data-icon="arrow-r" data-iconpos="right">SiFi</a></p>
+		      <p><a href="#" data-role="button" data-icon="arrow-r" data-iconpos="right">Drama</a></p>
+		      <p><a href="#" data-role="button" data-icon="arrow-r" data-iconpos="right">Horror</a></p>
+		      <p><a href="#" data-role="button" data-icon="arrow-r" data-iconpos="right">Comedy</a></p>
+		      <p><a href="#" data-role="button" data-icon="arrow-r" data-iconpos="right">Family</a></p>
+		      <p><a href="#" data-role="button" data-icon="arrow-r" data-iconpos="right">Romance</a></p>
+		      <p><a href="#" data-role="button" data-icon="arrow-r" data-iconpos="right">Documentary</a></p>
+		       
+		   </p>
+		</div>
+		
+		<div data-role="footer" data-position="fixed">
+			<h4>Footer</h4>
+		</div>
+		
+	</div>
+
+	
+
+	<!-- JavaScript under here -->
+	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	
+	
+
+</body>
+</html>
