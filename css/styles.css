@@ -31,10 +31,10 @@ Feb.23,2012
    }
       
    h1 {	
-   	   color: #3d1efb;
-   	   border-top: 2px  solid red;
-	   border-bottom: 2px  solid red;
-	   padding: 10px 0 10px 10px;
+   	    color: #3d1efb;
+   	/*  border-top: 2px  solid red;
+	   border-bottom: 2px  solid red;*/
+	   /*padding: 10px 0 10px 10px;*/
 	   background: #dce5ea; 
 	   font-size: 24px;                     
 	   text-align: center;		  
@@ -49,8 +49,8 @@ Feb.23,2012
    			  font-size: 25px;
    			  font-weight: bold; 
    		      text-align: center;
-   		      margin-top: -120px;
-   		      margin-left: 100px;
+   		      margin-top: -70px;
+   		      margin-left: 130px;
    }
    
    #btn {
@@ -80,6 +80,10 @@ Feb.23,2012
    	  line-height: 1em;
    }
    
+   ul {
+   
+   }
+   
    li {
    	   text-decoration: none;
    	   display: block;
@@ -100,9 +104,14 @@ Feb.23,2012
    }
    
    img ul li{
+   			 text-decoration: none;
    			 text-align: center;
    		     padding: 10px 0 0 22px;
    		     background: #dce5ea;
+   }
+   
+   ul li ul {
+   			 text-decoration: none;
    }
    
    ul li ul li{

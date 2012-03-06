@@ -25,10 +25,55 @@
 </head>
 <body>
 
-	<div data-role="page">
+	<div data-role="page" id="home">
 	
 		<div data-role="header" data-position="fixed">
 			<h1>Movie Tracker</h1>
+		</div>
+		
+		<div data-role="content">
+		
+			<a href="#drilldown" data-role="button" data-icon="forward" data-inline="true" data-mini="true" data-theme="b" data-iconpos="right">DrillDown</a>	
+			<a href="#listInlay" data-role="button" data-icon="forward" data-inline="true" data-mini="true" data-theme="b" data-iconpos="right">List Inlay</a>
+			<!--<a href="#thumbnail_list" data-role="button" data-icon="forward" data-inline="true" data-mini="true" data-theme="b" data-			           iconpos="right">Thumbnail</a>-->
+			
+			<form method="post" enctype="text/plain" id="myform" name="f1" action="#" align="center">
+			<p>				
+			   <input type="search" id="search" value="Quick Search Here" name="search" size="40" maxlength="40" /> 
+			</p>
+	</form> 
+			
+			
+			<p align="center">
+			<img src="images/cta_logo.png" width="200px" height="200px">
+			  
+		   </p>
+		   <p id="pg1_link">
+		       <a href = "additem.html">Click to Enter</a>
+		   </p>
+		   	
+		   	<p align="center">Browse Categories:</p>
+		      <p><a href="#" data-role="button" data-icon="arrow-r" data-iconpos="right">SiFi</a></p>
+		      <p><a href="#" data-role="button" data-icon="arrow-r" data-iconpos="right">Drama</a></p>
+		      <p><a href="#" data-role="button" data-icon="arrow-r" data-iconpos="right">Horror</a></p>
+		      <p><a href="#" data-role="button" data-icon="arrow-r" data-iconpos="right">Comedy</a></p>
+		      <p><a href="#" data-role="button" data-icon="arrow-r" data-iconpos="right">Family</a></p>
+		      <p><a href="#" data-role="button" data-icon="arrow-r" data-iconpos="right">Romance</a></p>
+		      <p><a href="#" data-role="button" data-icon="arrow-r" data-iconpos="right">Documentary</a></p>
+		       
+		   </p>
+		</div>
+		
+		<div data-role="footer" data-position="fixed">
+			<h4>Footer</h4>
+		</div>
+		
+	</div>
+	
+	<div data-role="page" id="drilldown" data-add-back-btn="true">
+	
+		<div data-role="header" data-position="fixed">
+			<h1>One Window Drilldown</h1>
 		</div>
 		
 		<div data-role="content">
@@ -37,14 +82,9 @@
 			   <input type="search" id="search" value="Quick Search Here" name="search" size="40" maxlength="40" /> 
 			</p>
 	</form> 
-			<p align="center">
-			<img src="images/cta_logo.png" width="200px" height="200px">
-			  
-		   </p>
-		   <p>
-		       <a href = "additem.html">Enter</a>
-		   </p>
-		   
+			<h2>One Window Drilldown</h2>
+			
+		  		   
 		   	
 		   	<p>Browse Categories:</p><br/>
 		      <p><a href="#" data-role="button" data-icon="arrow-r" data-iconpos="right">SiFi</a></p>
@@ -63,6 +103,77 @@
 		</div>
 		
 	</div>
+	
+	<div data-role="page" id="listInlay" data-add-back-btn="true">
+	
+		<div data-role="header" data-position="fixed">
+			<h1>Movie Tracker</h1>
+		</div>
+		
+		<div data-role="content">
+			<form method="post" enctype="text/plain" id="myform" name="f1" action="#" align="center">
+			<p>				
+			   <input type="search" id="search" value="Quick Search Here" name="search" size="40" maxlength="40" /> 
+			</p>
+	</form> 
+			<h2>List Inlay</h2>
+			
+		  		   
+		   	
+		   	<p>Browse Categories:</p><br/>
+		      <p><a href="#" data-role="button" data-icon="arrow-r" data-iconpos="right">SiFi</a></p>
+		      <p><a href="#" data-role="button" data-icon="arrow-r" data-iconpos="right">Drama</a></p>
+		      <p><a href="#" data-role="button" data-icon="arrow-r" data-iconpos="right">Horror</a></p>
+		      <p><a href="#" data-role="button" data-icon="arrow-r" data-iconpos="right">Comedy</a></p>
+		      <p><a href="#" data-role="button" data-icon="arrow-r" data-iconpos="right">Family</a></p>
+		      <p><a href="#" data-role="button" data-icon="arrow-r" data-iconpos="right">Romance</a></p>
+		      <p><a href="#" data-role="button" data-icon="arrow-r" data-iconpos="right">Documentary</a></p>
+		       
+		   </p>
+		</div>
+		
+		<div data-role="footer" data-position="fixed">
+			<h4>Footer</h4>
+		</div>
+		
+	</div>
+	
+	<div data-role="page" id="thumbnail_list" data-add-back-btn="true">
+	
+		<div data-role="header" data-position="fixed">
+			<h1>Thumbnail and Text List</h1>
+		</div>
+		
+		<div data-role="content">
+			<form method="post" enctype="text/plain" id="myform" name="f1" action="#" align="center">
+			<p>				
+			   <input type="search" id="search" value="Quick Search Here" name="search" size="40" maxlength="40" /> 
+			</p>
+	</form> 
+			<h2>Thumbnail and Text List</h2>
+			
+		  		   
+		   	
+		   	<p>Browse Categories:</p><br/>
+		      <p><a href="#" data-role="button" data-icon="arrow-r" data-iconpos="right">SiFi</a></p>
+		      <p><a href="#" data-role="button" data-icon="arrow-r" data-iconpos="right">Drama</a></p>
+		      <p><a href="#" data-role="button" data-icon="arrow-r" data-iconpos="right">Horror</a></p>
+		      <p><a href="#" data-role="button" data-icon="arrow-r" data-iconpos="right">Comedy</a></p>
+		      <p><a href="#" data-role="button" data-icon="arrow-r" data-iconpos="right">Family</a></p>
+		      <p><a href="#" data-role="button" data-icon="arrow-r" data-iconpos="right">Romance</a></p>
+		      <p><a href="#" data-role="button" data-icon="arrow-r" data-iconpos="right">Documentary</a></p>
+		       
+		   </p>
+		</div>
+		
+		<div data-role="footer" data-position="fixed">
+			<h4>Footer</h4>
+		</div>
+		
+	</div>
+
+
+
 
 	
 
