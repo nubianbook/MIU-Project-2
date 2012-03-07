@@ -31,17 +31,12 @@
 			<h1>Movie Tracker</h1>
 		</div>
 		
-		<div data-role="content">
-		
-			<a href="#drilldown" data-role="button" data-icon="forward" data-inline="true" data-mini="true" data-theme="b" data-iconpos="right">DrillDown</a>	
-			<a href="#listInlay" data-role="button" data-icon="forward" data-inline="true" data-mini="true" data-theme="b" data-iconpos="right">List Inlay</a>
-			<!--<a href="#thumbnail_list" data-role="button" data-icon="forward" data-inline="true" data-mini="true" data-theme="b" data-			           iconpos="right">Thumbnail</a>-->
-			
+					
 			<form method="post" enctype="text/plain" id="myform" name="f1" action="#" align="center">
-			<p>				
-			   <input type="search" id="search" value="Quick Search Here" name="search" size="40" maxlength="40" /> 
-			</p>
-	</form> 
+				<p>				
+				   <input type="search" id="search" value="Quick Search Here" name="search" size="40" maxlength="40" /> 
+				</p>
+	        </form> 
 			
 			
 			<p align="center">
@@ -51,18 +46,19 @@
 		   <p id="pg1_link">
 		       <a href = "additem.html">Click to Enter</a>
 		   </p>
-		   	
-		   	<p align="center">Browse Categories:</p>
-		      <p><a href="#" data-role="button" data-icon="arrow-r" data-iconpos="right">SiFi</a></p>
-		      <p><a href="#" data-role="button" data-icon="arrow-r" data-iconpos="right">Drama</a></p>
-		      <p><a href="#" data-role="button" data-icon="arrow-r" data-iconpos="right">Horror</a></p>
-		      <p><a href="#" data-role="button" data-icon="arrow-r" data-iconpos="right">Comedy</a></p>
-		      <p><a href="#" data-role="button" data-icon="arrow-r" data-iconpos="right">Family</a></p>
-		      <p><a href="#" data-role="button" data-icon="arrow-r" data-iconpos="right">Romance</a></p>
-		      <p><a href="#" data-role="button" data-icon="arrow-r" data-iconpos="right">Documentary</a></p>
-		       
-		   </p>
-		</div>
+		   	<div data-role="content">
+		
+			
+			<p><a href="#drilldown" data-role="button" data-icon="forward" data-theme="b" data-iconpos="right">DrillDown</a></p>	
+			<p><a href="#listInlay" data-role="button" data-icon="forward" data-theme="b" data-iconpos="right">List Inlay</a></p>
+			<p><a href="#thumbnail_list" data-role="button" data-icon="forward" data-theme="b" data-iconpos="right">Thumb-1</a></p>
+			<p><a href="#thumbnail_grid" data-role="button" data-icon="forward" data-theme="b" data-iconpos="right">Thumb-2</a></p>
+			<p><a href="#news_stream" data-role="button" data-icon="forward" data-theme="b" data-iconpos="right">News Stream</a></p>
+			<p><a href="https://github.com/nubianbook/MIU-Project-2" data-role="button" data-icon="forward" data-theme="b" data-iconpos="right">My Repo</a></p>
+			<p><a href="https://github.com/nubianbook/MIU-Project-2" data-role="button" data-icon="forward" data-theme="b" data-iconpos="right">My Page</a></p>
+		
+			</div>
+		   			</div>
 		
 		<div data-role="footer" data-position="fixed">
 			<h4>Footer</h4>
@@ -86,7 +82,7 @@
 			
 		  		   
 		   	
-		   	<p>Browse Categories:</p><br/>
+		   	<p align="center">Browse Categories:</p>
 		      <p><a href="#" data-role="button" data-icon="arrow-r" data-iconpos="right">SiFi</a></p>
 		      <p><a href="#" data-role="button" data-icon="arrow-r" data-iconpos="right">Drama</a></p>
 		      <p><a href="#" data-role="button" data-icon="arrow-r" data-iconpos="right">Horror</a></p>
@@ -120,15 +116,51 @@
 			
 		  		   
 		   	
-		   	<p>Browse Categories:</p><br/>
-		      <p><a href="#" data-role="button" data-icon="arrow-r" data-iconpos="right">SiFi</a></p>
-		      <p><a href="#" data-role="button" data-icon="arrow-r" data-iconpos="right">Drama</a></p>
-		      <p><a href="#" data-role="button" data-icon="arrow-r" data-iconpos="right">Horror</a></p>
-		      <p><a href="#" data-role="button" data-icon="arrow-r" data-iconpos="right">Comedy</a></p>
-		      <p><a href="#" data-role="button" data-icon="arrow-r" data-iconpos="right">Family</a></p>
-		      <p><a href="#" data-role="button" data-icon="arrow-r" data-iconpos="right">Romance</a></p>
-		      <p><a href="#" data-role="button" data-icon="arrow-r" data-iconpos="right">Documentary</a></p>
-		       
+		   	<p align="center">Browse Categories:</p>
+		   	<div data-role="collapsible">
+		      <h3>Sifi</h3>
+		      <p>Back to the Future</p>
+		      <p>2012</p>
+		      <p>Star Trek</p>
+		    </div>
+		    <div data-role="collapsible">
+		      <h3>Drama</h3>
+		      <p>Who's Afraid of Virginia Wolf</p>
+		      <p>To Kill a Mockingbird</p>
+		      <p>Whatever Happened to Baby Jane</p>
+		    </div>
+		    <div data-role="collapsible">
+		      <h3>Horror</h3>
+		      <p>Screen Theater</p>
+		      <p>The People Under the Stairs</p>
+		      <p>Nightmare on Elm Street</p>
+		    </div>
+		    <div data-role="collapsible">
+		      <h3>Comedy</h3>
+		      <p>Around the World in Eighty Days</p>
+		      <p>The Nutty Professor</p>
+		      <p>Blazing Saddles</p>
+		    </div>
+		    <div data-role="collapsible">
+		      <h3>Family</h3>
+		      <p>Marmaduke</p>
+		      <p>Shrek</p>
+		      <p>The SandLot</p>
+		    </div>
+		    <div data-role="collapsible">
+		      <h3>Romance</h3>
+		      <p>To Sir with Love</p>
+		      <p>Sleepless in Seattle</p>
+		      <p>Pretty Woman</p>
+		    </div>
+		    <div data-role="collapsible">
+		      <h3>Documentary</h3>
+		      <p>The History of Baseball</p>
+		      <p>The Tuskegee Airmen</p>
+		      <p>American Experience</p>
+		    </div>
+		    		      
+				       
 		   </p>
 		</div>
 		
@@ -149,8 +181,76 @@
 			<p>				
 			   <input type="search" id="search" value="Quick Search Here" name="search" size="40" maxlength="40" /> 
 			</p>
+	    </form> 
+			<h2>Thumbnail and Text List</h2>   
+		   	
+		   	<p align="center">Browse Categories:</p><br />
+		   	<ul data-role="listview">
+		      <li>
+			      <a href src="#"><img src="images/disaster.png" width="60px" height="104">
+			      	<h3>SiFi</h3>
+			      	   <p>This is the best doggone movie</p>
+		            </a>
+		      </li>
+		      <li>
+			      <a href src="#"><img src="images/misery.png" width="60px" height="104">
+			         <h3>Drama</h3>
+			      		<p>This is the best doggone movie</p>
+		      	  </a>
+		      </li>
+		      <li>
+			      <a href src="#"><img src="images/scary.png" width="60px" height="104">
+			         <h3>Horror</h3>
+			      		<p>This is the best doggone movie</p>
+		          </a>
+		      </li>
+		      <li>
+			      <a href src="#"><img src="images/comedy2.png" width="60px" height="104">
+			         <h3>Comedy</h3>
+			      		<p>This is the best doggone movie</p>
+		          </a>
+		      </li>
+		      <li>
+			      <a href src="#"><img src="images/family_pic.png" width="60px" height="104">
+			         <h3>Family</h3>
+			      		<p>This is the best doggone movie</p>
+		          </a>
+		      </li>
+		      <li>
+			      <a href src="#"><img src="images/love.png" width="60px" height="104">
+			         <h3>Romance</h3>
+			      		<p>This is the best doggone movie</p>
+		      	  </a>
+		      </li>
+		      <li>
+			      <a href src="#"><img src="images/planet_earth.png" width="60px" height="104">
+			         <h3>Documentary</h3>
+			      		<p>This is the best doggone movie</p>
+		      	  </a>
+		      </li>
+		       
+		   </ul>
+		</div>
+		
+		<div data-role="footer" data-position="fixed">
+			<h4>Footer</h4>
+		</div>
+		
+		</div>
+		
+		<div data-role="page" id="thumbnail_grid" data-add-back-btn="true">
+	
+		<div data-role="header" data-position="fixed">
+			<h1>Thumbnail Grid</h1>
+		</div>
+		
+		<div data-role="content">
+			<form method="post" enctype="text/plain" id="myform" name="f1" action="#" align="center">
+			<p>				
+			   <input type="search" id="search" value="Quick Search Here" name="search" size="40" maxlength="40" /> 
+			</p>
 	</form> 
-			<h2>Thumbnail and Text List</h2>
+			<h2>Thumbnail Grid</h2>
 			
 		  		   
 		   	
@@ -169,6 +269,44 @@
 		<div data-role="footer" data-position="fixed">
 			<h4>Footer</h4>
 		</div>
+		
+		</div>
+		
+		
+		<div data-role="page" id="news_stream" data-add-back-btn="true">
+	
+		<div data-role="header" data-position="fixed">
+			<h1>News Stream</h1>
+		</div>
+		
+		<div data-role="content">
+			<form method="post" enctype="text/plain" id="myform" name="f1" action="#" align="center">
+			<p>				
+			   <input type="search" id="search" value="Quick Search Here" name="search" size="40" maxlength="40" /> 
+			</p>
+	</form> 
+			<h2>News Stream</h2>
+			
+		  		   
+		   	
+		   	<p>Browse Categories:</p><br/>
+		      <p><a href="#" data-role="button" data-icon="arrow-r" data-iconpos="right">SiFi</a></p>
+		      <p><a href="#" data-role="button" data-icon="arrow-r" data-iconpos="right">Drama</a></p>
+		      <p><a href="#" data-role="button" data-icon="arrow-r" data-iconpos="right">Horror</a></p>
+		      <p><a href="#" data-role="button" data-icon="arrow-r" data-iconpos="right">Comedy</a></p>
+		      <p><a href="#" data-role="button" data-icon="arrow-r" data-iconpos="right">Family</a></p>
+		      <p><a href="#" data-role="button" data-icon="arrow-r" data-iconpos="right">Romance</a></p>
+		      <p><a href="#" data-role="button" data-icon="arrow-r" data-iconpos="right">Documentary</a></p>
+		       
+		   </p>
+		</div>
+		
+		<div data-role="footer" data-position="fixed">
+			<h4>Footer</h4>
+		</div>
+
+		
+	</div>
 		
 	</div>
 
