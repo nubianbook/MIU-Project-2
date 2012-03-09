@@ -10,6 +10,24 @@
 // Wait until the DOM is ready.
 window.addEventListener("DOMContentLoaded", function(){
    //alert(localStorage.length);
+   
+//Variable defaults
+	var movCategory = ["--Choose Category--",					
+					   "SciFi", "Drama", "Horror", "Comedy", "Family",  "Romance", "Documentary"],
+	    acquiredValue = "No",
+	    viewedValue,
+	    watchValue,
+	    rateValue,
+	    dataValue,
+	    giftValue,
+	    downloadValue = "No",
+	    oneValue = "No",
+	    twoValue = "No",
+	  	notWatchValue = "No",
+	  	notseeValue = "No",
+	  	purchaseValue = "No",
+	  	errMsg = w('errors')
+    ;
 
 
 // getElementbyID Function
@@ -41,7 +59,7 @@ window.addEventListener("DOMContentLoaded", function(){
 			var radioA = document.getElementById('myform').acquired;
 			for(var i=0; i<radioA.length; i++) {
 				if(radioA[i].checked) {
-					dataValue = radioA[i].value;
+					acquiredValue = radioA[i].value;
 	    }
 	}								
 }
@@ -165,7 +183,7 @@ window.addEventListener("DOMContentLoaded", function(){
 	 		w('items').style.display = "block";
 	 		for(var i=0, j=localStorage.length; i<j; i++) {
 	 			var makeli = document.createElement('li');
-	 			var linksLi = document.createElement('li')
+	 			var linksLi = document.createElement('li');
 	 			makeList.appendChild(makeli);
 	 			var key = localStorage.key(i);
 	 			var value = localStorage.getItem(key);
@@ -185,7 +203,7 @@ window.addEventListener("DOMContentLoaded", function(){
 	}
 	
 	function getImage(imgName, makeSubList) {
-		var imageLi = document.createElement('li')
+		var imageLi = document.createElement('li');
 		makeSubList.appendChild(imageLi);
 		var newImg = document.createElement('img');
 		var setSrc = newImg.setAttribute("src", "images/"+ imgName + ".png");
@@ -205,7 +223,7 @@ window.addEventListener("DOMContentLoaded", function(){
 		var editLink = document.createElement('a'); 
 		editLink.href = "#";
 		editLink.key = key;
-		var editText = "Edit Info"		
+		var editText = "Edit Info";		
 		editLink.addEventListener("click", editItem);
 		editLink.innerHTML = editText;
 		linksLi.appendChild(editLink);
@@ -243,7 +261,7 @@ window.addEventListener("DOMContentLoaded", function(){
 			for(var i=0; i<radioB.length; i++) {
 				if(radioB[i].value == "Viewed" && item.viewed[1] == "Viewed") {
 					radioB[i].setAttribute("checked", "checked");
-				} else if(radioB[i].value == "NotSee" && item.viewed[1] == "NotSee"){
+				} else if(radioB[i].value == "No" && item.viewed[1] == "No"){
 				 	radioB[i].setAttribute("checked", "checked");
 					     	
 				}
@@ -253,7 +271,7 @@ window.addEventListener("DOMContentLoaded", function(){
 			for(var i=0; i<radioC.length; i++) {
 				if(radioC[i].value == "Watch" && item.watch[1] == "Watch") {
 					radioC[i].setAttribute("checked", "checked");
-				} else if(radioC[i].value == "NotWatch" && item.watch[1] == "NotWatch"){
+				} else if(radioC[i].value == "No" && item.watch[1] == "No"){
 				 	radioC[i].setAttribute("checked", "checked");
 					     	
 				}
@@ -272,9 +290,14 @@ window.addEventListener("DOMContentLoaded", function(){
 				if(item.checkbox1[1] = "download"){
 			w('yes').setAttribute("checked", "checked");
 	}
-				if(item.checkbox2[1] = "viewed"){
+				if(item.checkbox2[1] = "gift"){
 			w('yes').setAttribute("checked", "checked");
 	}
+	
+			if(item.viewed[1] = "yes"){
+			w('yes').setAttribute("checked", "checked");
+	}
+					
 			w('range-slider').value = item.slider[1];
 			w('noteName').value = item.notes[1];
 			
@@ -300,7 +323,7 @@ window.addEventListener("DOMContentLoaded", function(){
 	
 		function clearLocal() {
 			if(localStorage.length === 0) {
-			    alert("There is no data to clear.")
+			    alert("There is no data to clear.");
 			    } else 
 			    	   {
 			    	   	 localStorage.clear();
@@ -364,21 +387,6 @@ window.addEventListener("DOMContentLoaded", function(){
 	   
 	}
 	
-//Variable defaults
-	var movCategory = ["--Choose Category--",					
-					   "SciFi", "Drama", "Horror", "Comedy", "Family",  "Romance", "Documentary"],
-	    acquiredValue = "No",
-	    viewedValue,
-	    watchValue,
-	    rateValue,
-	    downloadValue = "No"
-	    oneValue = "No",
-	    twoValue = "No",
-	  	notWatchValue = "No",
-	  	notseeValue = "No",
-	  	purchaseValue = "No"
-	  	errMsg = w('errors');
-    ;
  	makeCats();	
 		
 	//Set link & Submit Click Events
